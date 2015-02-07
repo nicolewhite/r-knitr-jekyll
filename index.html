@@ -4,6 +4,6 @@ layout: default
 
 {% for post in site.posts %}
   {{ post.date | date_to_long_string }}<br>
-  <a href="{{ post.url }}">{{ post.title }}</a><br>
+  <a href="{{site.url}}{{ post.url }}">{{ post.title }}</a><br>
   <br>
 {% endfor %}
